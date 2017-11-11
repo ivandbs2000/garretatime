@@ -1,3 +1,4 @@
+
 #include <wx/wx.h>
 #include <iostream>
 using namespace std;
@@ -23,12 +24,29 @@ public:
   void onBt8 (wxCommandEvent&);
   void onBt9 (wxCommandEvent&);
   void onBtSum (wxCommandEvent&);
+  void onBtRes (wxCommandEvent&);
+  void onBtDiv (wxCommandEvent&);
+  void onBtMul (wxCommandEvent&);
+  void onBtIgu (wxCommandEvent&);
+  void onBtClo (wxCommandEvent&);
+  void onBtBac (wxCommandEvent&);
+  void onBtPun (wxCommandEvent&);
 
 private:
+  string x;
+  string y;
+  string z;
   int valor1;
   int valor2;
+  double operandoo;
+  double operandoo1;
+  double resultadoo;
+  int operando;
+  int operando1;
+  int op;
+  int resultado;
   string operacion;
   int nClicks;
-  	
+  int ban;	
   DECLARE_EVENT_TABLE()
 };
